@@ -1,0 +1,164 @@
+{
+  "serverName": "example",
+  "roles": [
+    {
+      "name": "founder",
+      "position": 5,
+      "mentionable": true,
+      "hexColor": "#cc00ff",
+      "perm": 2146959103
+    },
+    {
+      "name": "staff",
+      "position": 3,
+      "mentionable": true,
+      "hexColor": "#3498db",
+      "perm": 536346319
+    },
+    {
+      "name": "member",
+      "position": 2,
+      "mentionable": true,
+      "hexColor": "#e91e63",
+      "perm": 104320577
+    },
+    {
+      "name": "BOT",
+      "position": 4,
+      "mentionable": true,
+      "hexColor": "#ff9f00",
+      "perm": 2146959103
+    }
+  ],
+  "channels": [
+    {
+      "type": "category",
+      "name": "welcome",
+      "permissions": [
+        { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+        { "id": "staff", "type": "role", "deny": 2048, "allow": 1024 },
+        { "id": "member", "type": "role", "deny": 2048, "allow": 1024 },
+        { "id": "@everyone", "type": "role", "deny": 2048, "allow": 1024 }
+      ],
+      "children": [
+        {
+          "type": "text",
+          "name": "welcome",
+          "permissions": [
+            { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "staff", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "member", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "@everyone", "type": "role", "deny": 2048, "allow": 1024 }
+          ],
+          "nsfw": false,
+          "topic": null
+        },
+        {
+          "type": "text",
+          "name": "announcements",
+          "permissions": [
+            { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "staff", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "member", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "@everyone", "type": "role", "deny": 2048, "allow": 1024 }
+          ],
+          "nsfw": false,
+          "topic": null
+        },
+        {
+          "type": "text",
+          "name": "roles",
+          "permissions": [
+            { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "staff", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "member", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "@everyone", "type": "role", "deny": 2048, "allow": 1024 }
+          ],
+          "nsfw": false,
+          "topic": null
+        },
+        {
+          "type": "text",
+          "name": "staff-list",
+          "permissions": [
+            { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "staff", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "member", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "@everyone", "type": "role", "deny": 2048, "allow": 1024 }
+          ],
+          "nsfw": false,
+          "topic": null
+        },
+        {
+          "type": "text",
+          "name": "rules",
+          "permissions": [
+            { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "staff", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "member", "type": "role", "deny": 2048, "allow": 1024 },
+            { "id": "@everyone", "type": "role", "deny": 2048, "allow": 1024 }
+          ],
+          "nsfw": false,
+          "topic": null
+        }
+      ],
+      "position": 1
+    },
+    {
+      "type": "category",
+      "name": "chatting",
+      "permissions": [],
+      "children": [
+        {
+          "type": "text",
+          "name": "general",
+          "permissions": [],
+          "nsfw": false,
+          "topic": null
+        },
+        { "type": "voice", "name": "General", "permissions": [] },
+        { "type": "voice", "name": "music", "permissions": [] },
+        {
+          "type": "text",
+          "name": "commands",
+          "permissions": [],
+          "nsfw": false,
+          "topic": null
+        },
+        {
+          "type": "text",
+          "name": "music-commands",
+          "permissions": [],
+          "nsfw": false,
+          "topic": null
+        }
+      ],
+      "position": 0
+    },
+    {
+      "type": "category",
+      "name": "staff",
+      "permissions": [
+        { "id": "@everyone", "type": "role", "deny": 3072, "allow": 0 },
+        { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+        { "id": "staff", "type": "role", "deny": 0, "allow": 3072 },
+        { "id": "member", "type": "role", "deny": 3072, "allow": 0 }
+      ],
+      "children": [
+        {
+          "type": "text",
+          "name": "staff-chat",
+          "permissions": [
+            { "id": "@everyone", "type": "role", "deny": 3072, "allow": 0 },
+            { "id": "founder", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "staff", "type": "role", "deny": 0, "allow": 3072 },
+            { "id": "member", "type": "role", "deny": 3072, "allow": 0 }
+          ],
+          "nsfw": false,
+          "topic": null
+        }
+      ],
+      "position": 2
+    }
+  ]
+}
